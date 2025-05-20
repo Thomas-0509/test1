@@ -1,0 +1,105 @@
+/* Définition de variables réutilisable */
+:root {
+    --BG_page: lightgray;
+    --BG_contaigner: lightgoldenrodyellow;
+    --text-color: black;
+    --heading-color: rgb(143, 4, 60);
+    --font: 'Arial', sans-serif;
+    --radius: 12px;
+    --shadow: 2px 6px 8px darkgray;
+    --color_btn: rgb(88, 200, 238);
+}
+body,html { 
+    height: 100%;
+    font-family: var(--font);
+    display : flex;
+    flex-direction: column;
+}
+.bg-img{
+    background-image: none;
+}
+.pageP{
+    background-color: var(--BG_page);
+}
+header, footer{
+    background-color: var(--BG_contaigner);
+    color: var(--text-color);
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;
+    border-radius: var(--radius);
+}
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+section {
+    background-color: var(--BG_contaigner);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+.btn1{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn {
+    background: var(--color_btn);
+    color: black;
+    font-weight: bold;
+    padding: 18px 30px;
+    margin: 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 260px;
+    border-radius: var(--radius);
+    font-size: 17px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--heading-color);
+    color: white;
+}
+.containerleftright {
+    display : flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px auto; /*centrer le contenu horizontalement*/
+}
+.left{
+    width: 40%;
+    padding: 5px; 
+    height: auto;
+}
+.right{
+    width: 60%;
+    padding: 5px; 
+}
+li{
+    list-style-type: none;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr, th, td{
+    background-color: none;
+    padding: 10px;
+    text-align: left;
+}
+.tab_comp{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 10px;
+}
+.tab_comp th, .tab_comp td, .tab_comp tr{
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
